@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ekelaniya</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="page">
+        
+        <div class="login_page">
+            <img class="img2" src="f:\Practice\sample4(login)\Screenshot 2024-03-17 222727.png" alt="img2">
+            <div class="login_form">
+                <form onsubmit="validation(event)">
+                    <div class="form-group">
+                        <label for="username" class="form-lable"></label>
+                        <input type="text" id="username" class="form-control" placeholder="Username" required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="form-lable"></label>
+                        <input type="password" id="password" class="form-control" placeholder="password" required="true">
+                    </div>
+
+                    <div class="alert alert-danger" id="fail">Incorrect Username or Password!</div>
+
+                    <button class="button_1" type="submit" >Log in</button> 
+                    <div class="lost_password">
+                        <a class="lost_p"href="https://sspr.kln.ac.lk/Password/Reset">Lost password?</a>
+                    </div> 
+                    <div class="row">
+                        <div class="col-8">
+                                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown">English (en)</button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Tamil</a></li>
+                                  <li><a class="dropdown-item" href="#">Sinhala</a></li>
+                                </ul>
+                        </div>
+                        <div class="col-4">
+                            <a class="Cookies" href="#">Cookies notice</a>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        document.getElementById('fail').style.display='none';
+
+        function validation(event){
+            event.preventDefault();
+
+            let username=document.getElementById('username').value;
+            let password=document.getElementById('password').value;
+
+            console.log(username);
+            console.log(password);
+            // if(username!="CS/2021/003" && password!="71262202Abc#"){
+            //     document.getElementById('fail').style.display='block';
+            // }else{
+            //     document.getElementById('fail').style.display='none';
+            //     //<a href="https://ekel.kln.ac.lk/my/courses.php"></a>;
+            // }
+            if(username ==="CS/2021/003" && password ==="71262202Abc#"){
+                document.getElementById('fail').style.display='none';
+                let bu =document.querySelector(".button_1");
+                bu.addEventListener("click",()=>{
+                    bu.innerHTML=`<button class="button_1" type="submit" href="https://ekel.kln.ac.lk/my/courses.php" >Log in</button> `;
+                });
+                
+                //<a href="https://ekel.kln.ac.lk/my/courses.php"></a>;
+            }else{
+                
+                document.getElementById('fail').style.display='block';
+            }
+        }
+    </script>
+</body>
+</html>

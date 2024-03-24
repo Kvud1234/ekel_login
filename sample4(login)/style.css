@@ -1,0 +1,103 @@
+.page{
+    background-color: bisque;
+    padding-bottom: 0.5%;
+    padding-top: 1%;
+    background-image: url(drone.jpg);
+    
+}
+.login_page{
+    text-align: center;
+    margin: 5% 30% 9.5% 30%;
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    
+}    
+.img2{
+    width: 80%;
+}
+form{
+    margin: 0 15% 0 15%;
+}
+.form-group{
+    margin-bottom: 0px;
+}
+.button_1{
+    
+    margin-top: 7px;
+    margin-bottom: 15px;
+    padding: 2% 44.5% 2% 44.5%;
+    border: 0px solid white;
+    border-radius: 8px;
+    background-color: rgb(81, 81, 185);
+    color: white;
+}
+.button_1:hover{
+   background-color: rgb(58, 58, 167); 
+   border-radius: 0px solid white;
+}
+
+.laguage{
+    text-align: left;
+    color: rgb(16, 16, 174);
+   
+}
+.Cookies{
+    text-align: right;
+    color: rgb(16, 16, 174);
+    
+}
+.lost_p{
+    color: rgb(16, 16, 174);
+}
+.lost_password{
+    margin-bottom: 6%;
+
+}
+
+.row{
+    margin-bottom: 8%;
+}
+.col-8{
+    text-align: left;
+}
+.col-6{
+    text-align: right;
+}
+.alert alert-danger{
+    margin-left: ;
+}
+.dropdown-toggle{
+    background-color: white;
+    border: 1px solid white;
+    color: rgb(16, 16, 174) ;
+}
+.dropdown-toggle:hover{
+    background-color: white;
+    border: 0px solid white;
+}
+
+@media(max-width:700px){
+    .login_page{
+        background-position: center;
+        width: 60%;
+        margin-left: 19%;
+        top: 15px;
+    }
+}
+@media(max-width:560px){
+    .login_page{
+        background-position: center;
+        width: 60%;
+        margin-left: 19%;
+        top: 20px;
+    }
+}
+@media(max-width:424px){
+    .login_page{
+        background-position: center;
+        width: 80%;
+        margin-left: 9%;
+        top: 10px;
+    }
+}
